@@ -1,0 +1,62 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <style>
+    .bouncing-square {
+      position: absolute;
+      display: block;
+      bottom: 100px;
+      width: 10%;
+      height: 120px;
+      background: #111;
+      box-shadow: 10px -10px 40px #999;
+      border-radius: 10px;
+      animation: bounce 1s ease infinite;
+    }
+
+    .square-one {
+      left: 15%; 
+    }
+
+    .square-two {
+      left: 35%;
+      animation-delay: 100ms;
+    }
+
+    .square-three {
+      left: 55%;
+      animation-delay: 200ms;
+    }
+
+    .square-four {
+      left: 75%;
+      animation-delay: 300ms;
+    }
+
+    @keyframes bounce {
+      40% {
+        height: 240px;
+        bottom: 460px;
+      }
+      70% {
+        height: 245px;
+        bottom: 470px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <span class="bouncing-square square-one">1</span>
+  <span class="bouncing-square square-two">2</span>
+  <span class="bouncing-square square-three">3</span>
+  <span class="bouncing-square square-four">4</span>
+</body>
+
+</html>
